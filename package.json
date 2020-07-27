@@ -1,12 +1,26 @@
 {
-  "name": "fox-game",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "fox-game",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "test": "jest",
+        "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts} \"",
+        "lint:check": "eslint --ignore-path ./.gitignore --quiet \" ./**/*.{js,ts}\"",
+        "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+        "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
+        "reset-parcel": "rm -rf .cache dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.5.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "jest": "^26.1.0",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.0.5"
+    }
 }
